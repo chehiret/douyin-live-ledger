@@ -1,0 +1,5 @@
+# Replace with the actual internal DNS name. Install Caddy's local root CA on each client.
+ledger.internal {
+    tls internal
+    reverse_proxy 127.0.0.1:4173
+}

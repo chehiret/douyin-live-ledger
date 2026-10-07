@@ -1,0 +1,22 @@
+[Unit]
+Description=Douyin Live Ledger
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=www
+Group=www
+WorkingDirectory=/www/wwwroot/douyin-live-ledger
+# Change /usr/bin/node to the Node.js 22.12+ binary installed on your server.
+ExecStart=/usr/bin/node --env-file-if-exists=.env --experimental-sqlite server/index.js
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=90
+KillMode=mixed
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
