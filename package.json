@@ -1,0 +1,33 @@
+{
+  "name": "douyin-live-ledger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "抖音主播数据管理器：多主播、多账号、直播数据采集与定时统计",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --experimental-sqlite server/index.js",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env --experimental-sqlite server/index.js",
+    "test": "node --experimental-sqlite --test test/*.test.js",
+    "test:ui": "node --experimental-sqlite test/ui-check.js",
+    "test:teams": "node --experimental-sqlite test/team-check.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "lucide-react": "^0.468.0",
+    "playwright": "^1.58.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6",
+    "vite": "^6.1.0"
+  },
+  "overrides": {
+    "qs": "^6.16.0"
+  }
+}

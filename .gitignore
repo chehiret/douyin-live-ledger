@@ -1,0 +1,38 @@
+# Dependencies and generated output
+node_modules/
+dist/
+test-output/
+coverage/
+playwright-report/
+test-results/
+
+# Private runtime data and configuration
+data/
+profiles/
+backups/
+diagnostics/
+runtime-logs/
+.env
+.env.*
+!.env.example
+.local/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+*.pem
+*.key
+initial-admin.txt
+*cookies*.json
+*cookie-export*.json
+
+# Local packaging and editor files
+*.zip
+*.tar
+*.tar.gz
+.user.ini
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

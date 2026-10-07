@@ -1,0 +1,10 @@
+* text=auto
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.example text eol=lf
+*.service text eol=lf
+*.ps1 text eol=crlf
